@@ -5,7 +5,8 @@
 }
 
 body {
-    background: #222 center / cover url('img/bg/0.jpg') 
+    background: #222 url('img/bg/0.jpg') no-repeat center top / cover ;
+    min-height: 100vh;
 }
 
 header {
