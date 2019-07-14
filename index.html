@@ -2,6 +2,7 @@
 
 <head>
     <title>TC Optimizer</title>
+    <link rel="icon" type="image/png" href="img/Tool Cupboard.png">
     <meta charset="utf-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
@@ -25,33 +26,36 @@
     </header>
 
     <main>
-        <form name="daily_decay">
-            <div>
-                <img class="tc_img" src="img/High Quality Metal.png">
-                <input type="number" name="h" value="100" pattern="\d+" />
-            </div>
-            <div>
-                <img class="tc_img" src="img/Stone.png">
-                <input type="number" name="s" value="1000" pattern="\d+" />
-            </div>
-            <div>
-                <img class="tc_img" src="img/Metal Fragments.png">
-                <input type="number" name="m" value="1000" pattern="\d+" />
-            </div>
-            <div>
-                <img class="tc_img" src="img/Wood.png">
-                <input type="number" name="w" value="1000" pattern="\d+" />
-            </div>
-            <input type="submit" hidden />
-        </form>
-
-        <div id="tc_display"></div>
+        <div id="content">
+                <form name="daily_decay">
+                        <div>
+                            <img class="tc_img" src="img/High Quality Metal.png">
+                            <input type="number" name="h" value="100" pattern="\d+" />
+                        </div>
+                        <div>
+                            <img class="tc_img" src="img/Stone.png">
+                            <input type="number" name="s" value="1000" pattern="\d+" />
+                        </div>
+                        <div>
+                            <img class="tc_img" src="img/Metal Fragments.png">
+                            <input type="number" name="m" value="1000" pattern="\d+" />
+                        </div>
+                        <div>
+                            <img class="tc_img" src="img/Wood.png">
+                            <input type="number" name="w" value="1000" pattern="\d+" />
+                        </div>
+                        <input type="submit" hidden />
+                    </form>
+            
+                    <div id="tc_display"></div>
+        </div>
     </main>
 
     <footer>
         <h5>&copy; 2019 - Joshua B</h5>
         <br>
-        <h6>Wood, Stone, Metal Fragments, High Quality Metal & Tool Cupboard images are assets owned by Facepunch Studios Ltd.</h4>
+        <h6>Wood, Stone, Metal Fragments, High Quality Metal & Tool Cupboard images are assets owned by Facepunch
+            Studios Ltd.</h4>
     </footer>
 
 </body>

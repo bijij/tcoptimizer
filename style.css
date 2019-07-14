@@ -4,6 +4,10 @@
     overflow-x: hidden;
 }
 
+body {
+    background: #222 center / cover url('img/bg/0.jpg') 
+}
+
 header {
     height: 48px;
     width: calc(100vw - 64px);
@@ -27,7 +31,7 @@ main {
     min-height: calc(100vh - 224px);
 
     width: 90vw;
-    max-width: 480px;
+    max-width: 576px;
     margin: 96px auto 32px auto;
 }
 
@@ -36,6 +40,17 @@ footer {
     max-width: 600px;
     height: 64px;
     margin: 0 auto 0 auto;
+
+    color: #fff;
+}
+
+div#content {
+    background-color: #fff;
+    padding: 32px;
+    margin: 16px;
+    border-radius: 4px;
+
+    box-shadow: 0px 8px 16px rgba(0,0,0,.26);
 }
 
 form[name=daily_decay] {
