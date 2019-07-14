@@ -47,4 +47,11 @@ form.addEventListener("change", (event) => {
     }
 });
 
+const entries = (new URLSearchParams(window.location.search)).entries();
+let entry;
+while (!(entry = entries.next()).done) {
+    const [key, val] = entry.value;
+    form.elements[key].value = val;
+}
+
 update_display();
