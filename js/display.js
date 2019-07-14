@@ -11,10 +11,10 @@ function seconds_to_string(seconds) {
 
 function update_display() {
     var optimal_tool_cupboard = optimal_layout(
-        form.elements[0].value,
+        form.elements[3].value,
         form.elements[1].value,
         form.elements[2].value,
-        form.elements[3].value,
+        form.elements[0].value,
     );
 
     tool_cupboard_display.innerHTML = null;
