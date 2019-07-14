@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Rust</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="js/toolcupboard.js"></script>
+    <script type="text/javascript" src="js/tcalc.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Rust Tool Cupboard Decay Optimizer</h1>
+    </div>
+    
+
+    <div id="decay_labels">
+        <img class="tc_img" src="img/Wood.png">
+        <img class="tc_img" src="img/Stone.png">
+        <img class="tc_img" src="img/Metal Fragments.png">
+        <img class="tc_img" src="img/High Quality Metal.png">
+    </div>
+
+    <form name="daily_decay">
+        <input type="number" name="wood" value="1000" pattern="\d+" />
+        <input type="number" name="stone" value="1000" pattern="\d+" />
+        <input type="number" name="metal" value="1000" pattern="\d+" />
+        <input type="number" name="high_qual" value="100" pattern="\d+" />
+        <input type="submit" hidden />
+    </form>
+
+    <div id="tc_display"></div>
+
+
+    <div id="footer">
+        <h5>&copy; 2019 - Joshua B</h5>
+        <br>
+        <h6>Wood, Stone, Metal Fragments & High Quality Metal images are assets owned by Facepunch inc.</h4>
+    </div>
+
+</body>
+<script type="text/javascript" src="js/display.js"></script>
+
+</html>

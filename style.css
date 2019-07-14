@@ -1,0 +1,12 @@
+div#decay_labels img {
+    margin: 20px;
+}
+
+form[name=daily_decay] input{
+    width: 120px;
+}
+
+img.tc_img {
+    width: 80px;
+    height: 80px;
+}
