@@ -1,4 +1,5 @@
 var form = document.forms.namedItem("daily_decay");
+var decay_time = document.querySelector('#decay_time');
 var tool_cupboard_display = document.querySelector("#tc_display");
 
 function seconds_to_string(seconds) {
@@ -17,16 +18,11 @@ function update_display() {
         form.elements[0].value,
     );
 
-    tool_cupboard_display.innerHTML = null;
-
     // Display decay time
-    decay_time = document.createElement("h3");
-    decay_time.appendChild(document.createTextNode(`Decay Time: ${seconds_to_string(optimal_tool_cupboard.decay_time())}`));
-    tool_cupboard_display.appendChild(decay_time);
-
-    tool_cupboard_display.appendChild(document.createElement("br"));
+    decay_time.innerText = seconds_to_string(optimal_tool_cupboard.decay_time());
 
     // Display tool cupboard layout
+    tool_cupboard_display.innerHTML = null;
     for (var i = 0; i < optimal_tool_cupboard.slots.length; i++) {
         if (i != 0 && i % 6 == 0) {
             tool_cupboard_display.appendChild(document.createElement("br"));

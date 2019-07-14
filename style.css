@@ -29,9 +29,6 @@ main {
     justify-content: center;
 
     min-height: calc(100vh - 224px);
-
-    width: 90vw;
-    max-width: 576px;
     margin: 96px auto 32px auto;
 }
 
@@ -41,43 +38,71 @@ footer {
     height: 64px;
     margin: 0 auto 0 auto;
 
+    overflow: hidden;
+
     color: #fff;
+    opacity: 0.26;
 }
 
 div#content {
     background-color: #fff;
     padding: 32px;
     margin: 16px;
-    border-radius: 4px;
+    border-radius: 8px;
 
     box-shadow: 0px 8px 16px rgba(0,0,0,.26);
 }
 
+div#content p {
+    text-align: center;
+}
+
 form[name=daily_decay] {
     width: 90vw;
-    max-width: 480px;
+    max-width: 528px;
     display: grid;
     grid-template-columns: auto auto auto auto;
+    column-gap: 8px;
+
+    margin: 16px 0 16px 0;
 }
 
 form[name=daily_decay] div{
     width: 18.75vw;
-    max-width: 120px;
+    max-width: 126px;
 }
 
 form[name=daily_decay] div img{
     display: block;
+
+    width: 9.375vw;
+
+    max-width: 60px;
+    max-height: 60px;
+
     margin: 0 auto 0 auto;
 }
 
 form[name=daily_decay] div input{
     display: block;
     width: 100%;
+
+    border: none;
+    border-bottom: 3px solid #CE412B;
+    text-align: center;
+
 }
 
-img.tc_img {
+div#tc_display {
+    margin: 16px 0 0 0;
+}
+
+div#tc_display img.tc_img {
+    width: 12.5vw;
+
     max-width: 80px;
     max-height: 80px;
 
-    width: 12.5vw;
+    margin: 4px;
+
 }
