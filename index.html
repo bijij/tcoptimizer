@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
     <title>TC Optimizer</title>
@@ -32,20 +32,21 @@
 
             <form name="daily_decay">
                 <div>
-                    <img class="tc_img" src="img/High Quality Metal.png">
-                    <input type="number" name="h" value="100" pattern="\d+" />
+                    <img class="tc_img" src="img/High Quality Metal.png" alt="High Quality Metal">
+
+                    <input type="number" aria-label="Daily high quality metal cost." name="h" value="100" pattern="\d+" />
                 </div>
                 <div>
-                    <img class="tc_img" src="img/Stone.png">
-                    <input type="number" name="s" value="1000" pattern="\d+" />
+                    <img class="tc_img" src="img/Stone.png" alt="Stone">
+                    <input type="number" aria-label="Daily stone cost." name="s" value="1000" pattern="\d+" />
                 </div>
                 <div>
-                    <img class="tc_img" src="img/Metal Fragments.png">
-                    <input type="number" name="m" value="1000" pattern="\d+" />
+                    <img class="tc_img" src="img/Metal Fragments.png" alt="Metal Fragments">
+                    <input type="number" aria-label="Daily metal fragments cost." name="m" value="1000" pattern="\d+" />
                 </div>
                 <div>
-                    <img class="tc_img" src="img/Wood.png">
-                    <input type="number" name="w" value="1000" pattern="\d+" />
+                    <img class="tc_img" src="img/Wood.png" alt="Wood">
+                    <input type="number" aria-label="Daily wood cost." name="w" value="1000" pattern="\d+" />
                 </div>
                 <input type="submit" hidden />
             </form>
@@ -56,9 +57,9 @@
     </main>
 
     <footer>
-        <h5>&copy; 2019 - Joshua B</h5>
+        <h4>&copy; 2019 - Joshua B</h5>
         <br>
-        <h6>Wood, Stone, Metal Fragments, High Quality Metal & Tool Cupboard images are assets owned by Facepunch
+        <h5>Wood, Stone, Metal Fragments, High Quality Metal & Tool Cupboard images are assets owned by Facepunch
             Studios Ltd.</h4>
     </footer>
 

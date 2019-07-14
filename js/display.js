@@ -31,6 +31,7 @@ function update_display() {
         var material_image = document.createElement("img");
         material_image.setAttribute("class", "tc_img");
         material_image.setAttribute("src", `img/${stack.material.name}.png`);
+        material_image.setAttribute("alt", stack.material.name);
         tool_cupboard_display.appendChild(material_image);
     }
 }
@@ -47,7 +48,9 @@ const entries = (new URLSearchParams(window.location.search)).entries();
 let entry;
 while (!(entry = entries.next()).done) {
     const [key, val] = entry.value;
-    form.elements[key].value = val;
+    if (form.elements[key]) {
+        form.elements[key].value = val;
+    }
 }
 
 update_display();
