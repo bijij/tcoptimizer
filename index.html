@@ -1,17 +1,18 @@
 <html>
 
 <head>
-    <title>Rust</title>
-    <meta charset="utf-8"/>
+    <title>TC Optimizer</title>
+    <meta charset="utf-8" />
 
-    <meta name="theme-color" content="#CE412B"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.86">
+    <meta name="theme-color" content="#CE412B" />
 
-    <meta property="og:title" content="TC Optimizer"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://bijij.github.io/tcoptimizer/"/>
-    <meta property="og:image" content="https://bijij.github.io/tcoptimizer/img/Tool%20Cupboard.png"/>
-    <meta property="og:description" content="TCOptimzer is a tool for determining the optimal way to stack items in a Rust Tool Cupboard."/>
-
+    <meta property="og:title" content="TC Optimizer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bijij.github.io/tcoptimizer/" />
+    <meta property="og:image" content="https://bijij.github.io/tcoptimizer/img/Tool%20Cupboard.png" />
+    <meta property="og:description"
+        content="TCOptimzer is a tool for determining the optimal way to stack items in a Rust Tool Cupboard." />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="text/javascript" src="js/toolcupboard.js"></script>
@@ -19,34 +20,39 @@
 </head>
 
 <body>
-    <div id="header">
+    <header>
         <h1>Rust Tool Cupboard Decay Optimizer</h1>
-    </div>
-    
+    </header>
 
-    <div id="decay_labels">
-        <img class="tc_img" src="img/High Quality Metal.png">
-        <img class="tc_img" src="img/Stone.png">
-        <img class="tc_img" src="img/Metal Fragments.png">
-        <img class="tc_img" src="img/Wood.png">
-    </div>
+    <main>
+        <form name="daily_decay">
+            <div>
+                <img class="tc_img" src="img/High Quality Metal.png">
+                <input type="number" name="h" value="100" pattern="\d+" />
+            </div>
+            <div>
+                <img class="tc_img" src="img/Stone.png">
+                <input type="number" name="s" value="1000" pattern="\d+" />
+            </div>
+            <div>
+                <img class="tc_img" src="img/Metal Fragments.png">
+                <input type="number" name="m" value="1000" pattern="\d+" />
+            </div>
+            <div>
+                <img class="tc_img" src="img/Wood.png">
+                <input type="number" name="w" value="1000" pattern="\d+" />
+            </div>
+            <input type="submit" hidden />
+        </form>
 
-    <form name="daily_decay">
-        <input type="number" name="h" value="100" pattern="\d+" />
-        <input type="number" name="s" value="1000" pattern="\d+" />
-        <input type="number" name="m" value="1000" pattern="\d+" />
-        <input type="number" name="w" value="1000" pattern="\d+" />
-        <input type="submit" hidden />
-    </form>
+        <div id="tc_display"></div>
+    </main>
 
-    <div id="tc_display"></div>
-
-
-    <div id="footer">
+    <footer>
         <h5>&copy; 2019 - Joshua B</h5>
         <br>
-        <h6>Wood, Stone, Metal Fragments & High Quality Metal images are assets owned by Facepunch inc.</h4>
-    </div>
+        <h6>Wood, Stone, Metal Fragments, High Quality Metal & Tool Cupboard images are assets owned by Facepunch Studios Ltd.</h4>
+    </footer>
 
 </body>
 <script type="text/javascript" src="js/display.js"></script>

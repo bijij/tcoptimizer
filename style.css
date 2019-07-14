@@ -1,12 +1,68 @@
-div#decay_labels img {
-    margin: 20px;
+* {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
-form[name=daily_decay] input{
-    width: 120px;
+header {
+    height: 48px;
+    width: calc(100vw - 64px);
+    padding: 8px 48px 8px 48px;
+    background-color: #CE412B;
+    color: #FFF;
+
+    position: absolute;
+    top: 0;
+    left: -16px;
+
+    box-shadow: 0px 8px 16px rgba(0,0,0,.26);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: calc(100vh - 224px);
+
+    width: 90vw;
+    max-width: 480px;
+    margin: 96px auto 32px auto;
+}
+
+footer {
+    width: 90vw;
+    max-width: 600px;
+    height: 64px;
+    margin: 0 auto 0 auto;
+}
+
+form[name=daily_decay] {
+    width: 90vw;
+    max-width: 480px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+form[name=daily_decay] div{
+    width: 18.75vw;
+    max-width: 120px;
+}
+
+form[name=daily_decay] div img{
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+form[name=daily_decay] div input{
+    display: block;
+    width: 100%;
 }
 
 img.tc_img {
-    width: 80px;
-    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+
+    width: 12.5vw;
 }
